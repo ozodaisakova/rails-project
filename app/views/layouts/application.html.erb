@@ -9,6 +9,30 @@
   </head>
 
   <body>
-    <%= yield %>
+    <!-- Контайнер -->
+    <div class="naz-container">
+      <!-- Шапка -->
+      <header class="naz-header">
+        <div class="naz-header-all">
+          <div class="naz-header-foto">
+          </div>
+          <div class="naz-header-logo">
+          </div>
+          <div class="naz-header-menu">            
+          </div>
+
+        </div>
+      </header>
+      <!-- Контент -->
+      <div class="naz-content">
+        <%= yield %>
+      </div>
+      <!-- Подвал сайта -->
+      <footer class="naz-footer">
+        <h1>Footer</h1>
+      </footer>
+
+    </div>
+
   </body>
 </html>
