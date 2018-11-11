@@ -7,11 +7,11 @@ end
 
 
 
-gem "bulma-rails", "~> 0.7.2"
-gem 'jquery-rails'
-gem 'bootstrap', '~> 4.1.1'
-gem "font-awesome-rails"
-
+# gem "bulma-rails", "~> 0.7.2"
+# gem 'jquery-rails'
+# gem 'bootstrap', '~> 4.1.1'
+gem "rails-uikit", git: 'git://github.com/nicbet/rails-uikit.git'
+gem 'font-awesome-sass', '~> 5.5.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'

@@ -1,0 +1,15 @@
+/*
+ *= require_self
+ */
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+ @import "custom";
+ $offcanvas-bar-background: #FFFFFF;
+ $offcanvas-bar-color-mode: dark;
+ $nav-item-padding-vertical: 15px;
+ $navbar-background: #FFFFFF;
+ $navbar-nav-item-height: 60px;
+ // $navbar-nav-item-color: white;
+ @import "uikit/variables-theme.scss";
+ @import "uikit/mixins-theme.scss";
+ @import "uikit/uikit-theme.scss";

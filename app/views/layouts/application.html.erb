@@ -1,38 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FishCompany</title>
+    <title>First Fish Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-  <body>
-    <!-- Контайнер -->
-    <div class="naz-container">
-      <!-- Шапка -->
-      <header class="naz-header">
-        <div class="naz-header-all">
-          <div class="naz-header-foto">
-          </div>
-          <div class="naz-header-logo">
-          </div>
-          <div class="naz-header-menu">            
-          </div>
-
-        </div>
-      </header>
+  <body class>
+    <div>
+      <!-- Шапка сайта -->
+      <%= render "partials/header" %>
       <!-- Контент -->
-      <div class="naz-content">
-        <%= yield %>
-      </div>
+      <%= yield %>
       <!-- Подвал сайта -->
-      <footer class="naz-footer">
-        <h1>Footer</h1>
-      </footer>
-
+      <%= render "partials/footer" %>
     </div>
-
   </body>
 </html>
