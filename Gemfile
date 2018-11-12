@@ -12,7 +12,6 @@ end
 # gem 'bootstrap', '~> 4.1.1'
 gem "rails-uikit", git: 'git://github.com/nicbet/rails-uikit.git'
 gem 'font-awesome-sass', '~> 5.5.0'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
 # Use sqlite3 as the database for Active Record
