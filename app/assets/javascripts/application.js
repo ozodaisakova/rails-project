@@ -13,5 +13,4 @@
 //= require rails-ujs
 //= require turbolinks
 //= require uikit
-//= require pace
 //= require_tree .

@@ -4,10 +4,10 @@
       <div class="uk-width-1-2@s uk-width-1-2@m uk-width-1-2@l ">
         <div class="uk-light  uk-text-center uk-text-left@s">
           <h1 class="naz-home-title ">
-            Закажите свежую  рыбу  от компании "First Fish Company"
+            <%= t("homepage.banner.title")  %> 
           </h1>
-           <p style="color: white;">Начните прямо сейчас</p>
-           <button class="naz-button"><span>КУПИТЬ </span></button>
+           <p style="color: white;"> <%= t("homepage.banner.subtitle")  %> </p>
+           <button class="naz-button"><span class="uk-text-uppercase"><%= t('buttons.claim') %> </span></button>
         </div>
       </div>
     </div>
@@ -15,9 +15,10 @@
 </div>
 <div class="uk-container">
   <br><br>
-  <div class="uk-text-center uk-margin-top uk-text-lead uk-text-bold uk-visible@s"><h1>Наши продукты</h1></div>
-  <div class="uk-text-center uk-margin uk-text-lead  uk-hidden@s">Наши продукты</div>
+  <div class="uk-text-center uk-margin-top uk-text-lead uk-text-bold uk-visible@s"><h1><%= t("homepage.our_products.title")  %> </h1></div>
+  <div class="uk-text-center uk-margin uk-text-lead  uk-hidden@s"><%= t("homepage.our_products.title")  %> </div>
   <hr class="uk-divider-icon">
+  <br><br>
   <div uk-grid class="uk-flex uk-flex-middle" >
     <div class="uk-width-1-2@s uk-visible@s" uk-scrollspy="cls: uk-animation-slide-left;">
         <div uk-lightbox>
@@ -30,13 +31,8 @@
     </div>
     <div class="uk-width-1-2@s" uk-scrollspy="cls: uk-animation-slide-right; ">
       <div class="">
-        <h3 class="uk-text-center uk-margin-top">Осетр и стерлядь</h3>
-        <p>&#160; &#160; &#160; В кулинарии из стерляди готовят самые разнообразные и изысканные блюда, не случайно издавна
-          ее называли «царской рыбой». На трапезах монархов блюда из стерляди подавались в первую очередь.
-          Классическое блюдо – стерляжья уха, она получается особенно вкусной с добавлением шампанского.
-          Стерлядь можно также приготовить на пару, запечь, пожарить и потушить.
-          Из этой рыбы получается прекрасное заливное и студень, а также начинка для пирогов и расстегаев.
-          Стерлядь паровую или горячего копчения используют в салатах.
+        <h3 class="uk-text-center uk-margin-top"><%= t("homepage.our_products.osetr_and_sterliad.title")  %> </h3>
+        <p>&#160; &#160; &#160; <%= t("homepage.our_products.osetr_and_sterliad.text") %>
         </p>
       </div>
     </div>
@@ -53,12 +49,8 @@
   <div uk-grid class="uk-flex uk-flex-middle" >
     <div class="uk-width-1-2@s" uk-scrollspy="cls: uk-animation-slide-left; ">
       <div class="">
-        <h3 class="uk-text-center uk-margin-top">Форель</h3>
-        <p>&#160; &#160; &#160; Мясо радужной форели, как и многих других видов рыб, содержит в себе
-          большое количество легкоусвояемого белка и при этом является малокалорийным. Рыба форель радужная
-          содержит в себе жирные кислоты омега-3, важные жирорастворимые витамины А, D, Е,
-           водорастворимые витамины группы В, а также следующие микроэлементы: калий,  селен,  цинк,
-           магний,  железо,  натрий и фосфор
+        <h3 class="uk-text-center uk-margin-top"><%= t("homepage.our_products.forel.title") %></h3>
+        <p>&#160; &#160; &#160; <%= t("homepage.our_products.forel.text") %>
         </p>
       </div>
     </div>
@@ -73,7 +65,7 @@
     </div>
   </div>
   <br>  <br>
-  <div class="uk-text-center uk-margin-top uk-text-lead uk-text-bold uk-visible@s"><h1>Наша технология</h1></div>
+  <div class="uk-text-center uk-margin-top uk-text-lead uk-text-bold uk-visible@s"><h1><%= t("homepage.our_tech.title") %></h1></div>
   <div class="uk-text-center uk-margin uk-text-lead  uk-hidden@s">Галерея</div>
   <hr class="uk-divider-icon">
   <div class="uk-margin uk-position-relative uk-visible-toggle uk-light" uk-slider="clsActivated: uk-transition-active; center: true" uk-scrollspy="cls: uk-animation-fade;">
@@ -82,8 +74,8 @@
             <div class="uk-panel">
                 <img src="/assets/tech/s1.jpg" alt="">
                 <div class="uk-visible@s uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                    <h3 class="uk-margin-remove">Технология выращивания</h3>
-                    <p class="uk-margin-remove">Технология выращивания рыбы на нашем предприятии разделена на 3 основные части</p>
+                    <h3 class="uk-margin-remove"><%= t('homepage.our_tech.slider.first.title') %></h3>
+                    <p class="uk-margin-remove"><%= t('homepage.our_tech.slider.first.text') %></p>
                 </div>
             </div>
         </li>
@@ -91,8 +83,8 @@
             <div class="uk-panel">
                 <img src="/assets/tech/s2.jpg" alt="">
                 <div class="uk-visible@s uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                    <h3 class="uk-margin-remove">Инкубационные цеха</h3>
-                    <p class="uk-margin-remove">В данном цеху возможно получить до 10 млн. личинок карповых за один тур</p>
+                    <h3 class="uk-margin-remove"><%= t('homepage.our_tech.slider.second.title') %></h3>
+                    <p class="uk-margin-remove"><%= t('homepage.our_tech.slider.second.text') %></p>
                 </div>
             </div>
         </li>
@@ -100,10 +92,8 @@
             <div class="uk-panel">
                 <img src="/assets/tech/s3.jpg" alt="">
                 <div class="uk-visible@s uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                    <h3 class="uk-margin-remove">УЗВ для разведения осетровых</h3>
-                    <p class="uk-margin-remove">Для работы данных  мы используем воду из собственной скважины.
-                      Использование такой системы позволяет нам круглогодично получать товарную
-                      рыбу в независимости от времени года и погодных условий.  </p>
+                    <h3 class="uk-margin-remove"><%= t('homepage.our_tech.slider.third.title') %></h3>
+                    <p class="uk-margin-remove"><%= t('homepage.our_tech.slider.third.text') %> </p>
                 </div>
             </div>
         </li>
@@ -111,9 +101,8 @@
             <div class="uk-panel">
                 <img src="/assets/tech/s4.jpg" alt="">
                 <div class="uk-visible@s uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                    <h3 class="uk-margin-remove">Открытые бассейны</h3>
-                    <p class="uk-margin-remove">Для разведения радужной форели мы используем открытые бассейны проточного типа.
-                       Всего на территории нашего хозяйства расположено 10 бассейнов, общим объемом 4500 м.куб. </p>
+                    <h3 class="uk-margin-remove"><%= t('homepage.our_tech.slider.fourth.title') %></h3>
+                    <p class="uk-margin-remove"><%= t('homepage.our_tech.slider.fourth.text') %> </p>
                 </div>
             </div>
         </li>
@@ -121,9 +110,8 @@
             <div class="uk-panel">
                 <img src="/assets/tech/s5.jpg" alt="">
                 <div class="uk-visible@s  uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                    <h3 class="uk-margin-remove">Результаты</h3>
-                    <p class="uk-margin-remove"> Наличие постоянно свежей родниковой воды,
-                      вкупе с использованием качественного европейского корма, обеспечивает отличное качество и вкус выращенной у нас рыбы. </p>
+                    <h3 class="uk-margin-remove"><%= t('homepage.our_tech.slider.fifth.title') %></h3>
+                    <p class="uk-margin-remove"> <%= t('homepage.our_tech.slider.fifth.text') %> </p>
                 </div>
             </div>
         </li>
@@ -133,8 +121,8 @@
 </div>
 </div>
 <br><br>
-<div class="uk-text-center uk-margin-top uk-text-lead uk-text-bold uk-visible@s"><h1>Наши контакты</h1></div>
-<div class="uk-text-center uk-margin uk-text-lead  uk-hidden@s">Наши контакты</div>
+<div class="uk-text-center uk-margin-top uk-text-lead uk-text-bold uk-visible@s"><h1><%= t("homepage.our_contact.title") %></h1></div>
+<div class="uk-text-center uk-margin uk-text-lead  uk-hidden@s"><%= t("homepage.our_contact.title") %></div>
 <hr class="uk-divider-icon">
 <div class="uk-container">
   <div uk-grid class="uk-flex uk-flex-middle">
@@ -148,21 +136,21 @@
       </div>
     </div>
     <div class="uk-width-1-2@s uk-card uk-card-body" uk-scrollspy="cls: uk-animation-slide-right; ">
-      <h3 class="uk-card-title">Информация</h3>
+      <h3 class="uk-card-title"><%= t("homepage.our_contact.information.title") %></h3>
       <ul class="uk-list uk-list-bullet">
-        <li>Шымкент, ул Еримбетова 52</li>
-        <li>Тел: +7 (7252) 47-40-97</li>
-        <li>Доп. тел: +7 (705) 435-03-93 доб. 201</li>
+        <li><%= t("homepage.our_contact.information.adress") %></li>
+        <li><%= t("homepage.our_contact.information.phone") %></li>
+        <li><%= t("homepage.our_contact.information.additional_phone") %></li>
     </ul>
-    <h3 class="uk-card-title">Часы и график работы</h3>
+    <h3 class="uk-card-title"><%= t("homepage.our_contact.hours_and_jobs.title") %></h3>
     <ul class="uk-list uk-list-bullet">
-      <li>Понедельник 9:00 – 18:00, обед 13:00 – 14:00</li>
-      <li>Вторник 9:00 – 18:00, обед 13:00 – 14:00</li>
-      <li>Среда 9:00 – 18:00, обед 13:00 – 14:00</li>
-      <li>Четверг 9:00 – 18:00, обед 13:00 – 14:00</li>
-      <li>Пятница 9:00 – 18:00, обед 13:00 – 14:00</li>
-      <li>Суббота выходной</li>
-      <li>Воскресенье выходной</li>
+      <li><%= t("homepage.our_contact.hours_and_jobs.monday") %></li>
+      <li><%= t("homepage.our_contact.hours_and_jobs.tuesday") %></li>
+      <li><%= t("homepage.our_contact.hours_and_jobs.wednesday") %></li>
+      <li><%= t("homepage.our_contact.hours_and_jobs.thursday") %></li>
+      <li><%= t("homepage.our_contact.hours_and_jobs.friday") %></li>
+      <li><%= t("homepage.our_contact.hours_and_jobs.saturday") %></li>
+      <li><%= t("homepage.our_contact.hours_and_jobs.sunday") %></li>
     </ul>
     </div>
   </div>
