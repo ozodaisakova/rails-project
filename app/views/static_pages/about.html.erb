@@ -1,0 +1,92 @@
+<style>
+.navbar-shadow{
+    box-shadow: 0px 0px 5px grey;
+    }
+</style>
+<div class="uk-text-center uk-margin-top uk-text-lead uk-text-bold uk-visible@s"><h1><%= t("about_page.title")  %> </h1></div>
+<div class="uk-text-center uk-margin uk-text-lead  uk-hidden@s"><%= t("about_page.title")  %> </div>
+<div class="uk-container uk-margin-large-top uk-margin-large-bottom">
+    <div uk-grid  class="uk-flex uk-flex-middle">
+        <div  class="uk-width-1-2@s">
+            <div uk-lightbox>
+            <a href="/assets/logo-ffc.jpg">
+                <div class="uk-card uk-card-default uk-card-body uk-card-hover uk-text-center">
+                <img src="/assets/logo-ffc.jpg" alt="" width="300px">
+                </div>
+            </a>
+            </div>
+        </div>
+        <div  class="uk-width-1-2@s uk-text-justify">
+           &#160;&#160;&#160;<%= t("about_page.info-1-text")  %>
+        </div>        
+    </div>
+    <div uk-grid  class="uk-margin-large-top uk-margin-large-bottom">        
+        <div class="uk-width-1-5@s">
+            <h1 class="huge uk-text-center">
+            200К
+            </h1>
+            <div class="uk-text-center ">
+            <%= t("about_page.statistic.one")  %>
+            </div>
+        </div>
+        <div class="uk-width-1-5@s">
+            <h1 class="huge uk-text-center">
+            60
+            </h1>
+            <div class="uk-text-center ">
+            <%= t("about_page.statistic.two")  %>
+            </div>
+        </div>
+        <div class="uk-width-1-5@s">
+            <h1 class="huge uk-text-center">
+            300К
+            </h1>
+            <div class="uk-text-center ">
+           <%= t("about_page.statistic.three")  %>
+            </div>
+        </div>
+        <div class="uk-width-1-5@s">
+            <h1 class="huge uk-text-center">
+            80
+            </h1>
+            <div class="uk-text-center">
+            <%= t("about_page.statistic.four")  %>
+            </div>
+        </div>
+        
+        <div class="uk-width-1-5@s">
+            <h1 class="huge uk-text-center">
+            100К
+            </h1>
+            <div class="uk-text-center ">
+            <%= t("about_page.statistic.five")  %>
+            </div>
+        </div>        
+    </div>
+    <div uk-grid class="uk-flex uk-flex-middle">
+         <div  class="uk-width-1-2@s uk-text-justify">
+           &#160;&#160;&#160; <%= t("about_page.info-2-text")  %>  
+        </div>
+        <div  class="uk-width-1-2@s">
+            <div uk-lightbox>
+            <a href="/assets/about/two.JPG">
+                <div class="uk-card uk-card-default uk-card-body uk-card-hover uk-text-center">
+                <img src="/assets/about/two.JPG" alt="" >
+                </div>
+            </a>
+            </div>
+        </div>        
+        <div  class="uk-width-1-2@s">
+            <div uk-lightbox>
+            <a href="/assets/about/three.JPG">
+                <div class="uk-card uk-card-default uk-card-body uk-card-hover uk-text-center">
+                <img src="/assets/about/three.JPG" alt="" >
+                </div>
+            </a>
+            </div>
+        </div>
+         <div  class="uk-width-1-2@s uk-text-justify">
+           &#160;&#160;&#160; <%= t("about_page.info-3-text")  %>
+        </div>
+    </div>
+</div>

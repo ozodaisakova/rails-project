@@ -1,5 +1,5 @@
 <div class="">
-  <nav class="uk-navbar-container" uk-sticky="show-on-up: true; animation: uk-animation-slide-top" uk-navbar>
+  <nav class="uk-navbar-container navbar-shadow" uk-sticky="show-on-up: true; animation: uk-animation-slide-top" uk-navbar>
     <div class="uk-navbar-left">     
      <%= link_to image_tag('/assets/logo-ffc.jpg', alt: "logo", width: "34", class: "uk-small-margin-right") + "FirstFish", 
      url_for({:controller => 'static_pages', :action => 'home'}), :class => 'uk-navbar-item uk-logo' %>
@@ -8,13 +8,13 @@
       <ul class="uk-navbar-nav uk-visible@m">
         <li><%= link_to t("menu.osetr_and_sterliad"), "" %></li>
         <li><%= link_to t("menu.forel"), "" %></li>
-        <li class="uk-active"><%= link_to t("menu.where_buy"), "" %></li>
+        <li class=""><%= link_to t("menu.where_buy"), "" %></li>
         <li><%= link_to t("menu.contact"), controller: "static_pages", action: "contacts"  %></li>
         <li>
           <%= link_to t("menu.info"), "#" %>
           <div class="uk-navbar-dropdown">
             <ul class="uk-nav uk-navbar-dropdown-nav">
-              <li class="uk-active"><%= link_to t("menu.tech"), "" %></li>
+              <li class=""><%= link_to t("menu.tech"), "" %></li>
               <li><%= link_to t("menu.refresh"), "" %></li>
               <li><%= link_to t("menu.about_us"), controller: "static_pages", action: "about" %></li>
             </ul>

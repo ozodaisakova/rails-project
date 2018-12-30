@@ -12,5 +12,9 @@ class StaticPagesController < ApplicationController
   def contacts
     render("contacts")
   end
+
+  def callback
+    return "callback"
+  end
   
 end
